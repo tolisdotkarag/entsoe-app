@@ -432,7 +432,7 @@ export class OutputGraphComponent implements OnInit {
   }
 
 showAvailability(){
-  this.http.get('../assets/Installed_Capacity/BEInstalledCapacity.csv', { responseType: 'text' })
+  this.http.get('assets/Installed_Capacity/BEInstalledCapacity.csv', { responseType: 'text' })
         .subscribe(data => {
           let csvToRowArray = data.split("\n");
           for (let index = 1; index < csvToRowArray.length - 1; index++) {
@@ -486,7 +486,7 @@ showAvailability(){
   showBalancingPrices($event: MouseEvent) {
     let country = this.checkCountryClicked();
     if (country == "") return;
-    this.http.get(`../assets/aFRR/${country.toUpperCase()}ActivatedBalancingPrices_aFRR.csv`, { responseType: 'text' })
+    this.http.get(`assets/aFRR/${country.toUpperCase()}ActivatedBalancingPrices_aFRR.csv`, { responseType: 'text' })
       .subscribe(data => {
         let csvToRowArray = data.split("\n");
         for (let index = 1; index < csvToRowArray.length - 1; index++) {
@@ -525,7 +525,7 @@ showAvailability(){
     if (country == "") return;
     ($event.target as HTMLButtonElement).disabled = true;
     this.solarForecastBool = !this.solarForecastBool;
-    this.http.get('../assets/GRGenerationSolarWindForecastData.csv', { responseType: 'text' })
+    this.http.get('assets/GRGenerationSolarWindForecastData.csv', { responseType: 'text' })
       .subscribe(data => {
         let csvToRowArray = data.split("\n");
         for (let index = 1; index < csvToRowArray.length - 1; index++) {
@@ -583,7 +583,7 @@ showAvailability(){
     let country = this.checkCountryClicked();
     if (country == "") return;
     ($event.target as HTMLButtonElement).disabled = true;
-    this.http.get('../assets/GRGenerationData.csv', { responseType: 'text' })
+    this.http.get('assets/GRGenerationData.csv', { responseType: 'text' })
       .subscribe(data => {
         let csvToRowArray = data.split("\n");
         for (let index = 1; index < csvToRowArray.length - 1; index++) {
@@ -609,7 +609,7 @@ showAvailability(){
     let country = this.checkCountryClicked();
     if (country == "") return;
     ($event.target as HTMLButtonElement).disabled = true;
-    this.http.get('../assets/GRTotalLoadForecastData.csv', { responseType: 'text' })
+    this.http.get('assets/GRTotalLoadForecastData.csv', { responseType: 'text' })
       .subscribe(data => {
         let csvToRowArray = data.split("\n");
         for (let index = 1; index < csvToRowArray.length - 1; index++) {
@@ -636,7 +636,7 @@ showAvailability(){
     let country = this.checkCountryClicked();
     if (country == "") return;
     ($event.target as HTMLButtonElement).disabled = true;
-    this.http.get('../assets/GRGenerationForecastWholeData.csv', { responseType: 'text' })
+    this.http.get('assets/GRGenerationForecastWholeData.csv', { responseType: 'text' })
       .subscribe(data => {
         let csvToRowArray = data.split("\n");
         for (let index = 1; index < csvToRowArray.length - 1; index++) {
@@ -714,7 +714,7 @@ showAvailability(){
     let country = this.checkCountryClicked();
     if (country == "") return;
     ($event.target as HTMLButtonElement).disabled = true;
-    this.http.get('../assets/GRActualTotalLoadData.csv', { responseType: 'text' })
+    this.http.get('assets/GRActualTotalLoadData.csv', { responseType: 'text' })
       .subscribe(data => {
         let csvToRowArray = data.split("\n");
         for (let index = 1; index < csvToRowArray.length - 1; index++) {
