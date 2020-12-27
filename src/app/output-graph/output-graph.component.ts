@@ -407,7 +407,7 @@ export class OutputGraphComponent implements OnInit {
     this.priceBool = false;
     this.predPriceBool = false;
     if (this.outageBool) {
-      this.http.get('../assets/Europe_Outages/BEOutagesData.csv', { responseType: 'text' })
+      this.http.get('assets/Europe_Outages/BEOutagesData.csv', { responseType: 'text' })
         .subscribe(data => {
           let csvToRowArray = data.split("\n");
           for (let index = 1; index < csvToRowArray.length - 1; index++) {
