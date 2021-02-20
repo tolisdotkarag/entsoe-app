@@ -6,10 +6,8 @@
     </div>
 </div>
 
-
-
-<button class="btn btn-dark mt-1 ml-1" (click)="showPrices($event)">Prices</button>
-<button class="btn btn-dark mt-1 ml-1" (click)="showPredictedPrices($event)">Predicted Prices</button>
+<button class="btn btn-dark mt-1 ml-1" (click)="showOutages($event)">Outages</button>
+<button class="btn btn-dark mt-1 ml-1" (click)="showAvailability($event)">Availability</button>
 <button class="btn btn-dark mt-1 ml-1" (click)="showTotalLoad($event)">Actual Total Load</button>
 <button class="btn btn-dark mt-1 ml-1" (click)="showTotalLoadForecast($event)">Total Load Forecast</button>
 <button class="btn btn-dark mt-1 ml-1" (click)="showGeneration($event)">Generation</button>
@@ -20,14 +18,13 @@
 <button class="btn btn-dark mt-1 ml-1" (click)="showWindForecast($event)">Wind Forecast</button>
 <button class="btn btn-dark mt-1 ml-1" (click)="showHydro($event)">Hydro</button>
 <button class="btn btn-dark mt-1 ml-1" (click)="showThermal($event)">Thermal</button>
-<button class="btn btn-dark mt-1 ml-1" (click)="showBalancingPrices($event)">Balancing Prices</button>
-<button class="btn btn-dark mt-1 ml-1" (click)="showAvailability()">Availability</button>
-<!-- <button class="btn btn-dark mt-1 ml-1" (click)="showOutages()" [disabled]="outageBool">Outages</button> -->
-<!-- <button class="btn btn-dark" (click)="showGenerationSWForecast()">Generation Solar-Wind Forecast</button> -->
-<!-- <button class="btn btn-dark" (click)="showthermalHydroForecast()">Thermal Hydro Forecast</button> -->
-
-<!-- <button class="btn btn-dark" (click)="showPrices()">Prices</button> -->
-
+<button class="btn btn-dark mt-1 ml-1" (click)="showImports($event)">Imports</button>
+<button class="btn btn-dark mt-1 ml-1" (click)="show_aFRRBalancingPrices($event)">aFRR Prices</button>
+<button class="btn btn-dark mt-1 ml-1" (click)="show_mFRRBalancingPrices($event)">mFRR Prices</button>
+<button class="btn btn-dark mt-1 ml-1" (click)="show_RRBalancingPrices($event)">RR Prices</button>
+<button class="btn btn-dark mt-1 ml-1" (click)="show_FCRBalancingPrices($event)">FCR Prices</button>
+<button class="btn btn-dark mt-1 ml-1" (click)="showPrices($event)">Prices</button>
+<!-- <button class="btn btn-dark mt-1 ml-1" (click)="showPredictedPrices($event)">Predicted Prices</button> -->
 
 <div style="height:800px" id="container"> </div>
 <!-- <div style="height:900px" id="container1"> </div> -->
