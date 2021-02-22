@@ -159,7 +159,7 @@ export class OutputGraphComponent implements OnInit {
     this.options.series = this.series;
     this.options1.series = this.series1;
   }
-  countries: string[] = ["at", "be", "fr", "it", "nl", "se1", "se2", "se3", "se4", "sk"];
+  countries: string[] = ["at", "be", "fr", "it", "nl", "se1", "se2", "se3", "se4", "sk", "gr"];
   countryClicked = [];
   outageBool: boolean = false;
   totalLoadBool: boolean = false;
